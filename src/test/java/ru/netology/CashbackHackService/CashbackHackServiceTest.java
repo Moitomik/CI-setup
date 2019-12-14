@@ -12,25 +12,21 @@ class CashbackHackServiceTest {
         int amount = 800;
 
         int actualResult = service.remain(amount);
-        int expectedResult = 0;
+        int expectedResult = 200;
 
         assertEquals(expectedResult, actualResult);
 
-        System.out.println(actualResult);
-        System.out.println(actualResult == expectedResult);
-    }
+        }
 
     @Test
     void shouldCalculateCashbackIfAmountIsOrMoreThan1000() {
         CashbackHackService service = new CashbackHackService();
-        int amount = 1500;
+        int amount = 1000;
 
         int actualResult = service.remain(amount);
-        int expectedResult = 75;
+        int expectedResult = 0;
 
         assertEquals(expectedResult, actualResult);
 
-        System.out.println(actualResult);
-        System.out.println(actualResult == expectedResult);
-    }
+      }
 }
